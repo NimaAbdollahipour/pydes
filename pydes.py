@@ -113,7 +113,7 @@ SHIFT = [1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1]
 def string_to_bit_array(text):  # Convert a string into a list of bits
     array = list()
     for char in text:
-        bin_val = binvalue(char, 8)  # Get the char value on one byte
+        bin_val = bin_value(char, 8)  # Get the char value on one byte
         array.extend([int(x) for x in list(bin_val)])  # Add the bits to the final list
     return array
 
